@@ -8,9 +8,7 @@
     },
     "permissions": [
         "notifications",
-        "alarms",
-        "storage",
-        "cookies"
+        "alarms"
     ],
     "author": "nagwan",
     "host_permissions": [],
@@ -18,16 +16,16 @@
         "default_popup": "pop-up.html",
         "default_title": "Zekr Reminder",
         "default_icon": {
-            "16": "/icons/logo.png",
-            "32": "/icons/logo.png",
-            "48": "/icons/logo.png",
-            "128": "/icons/logo.png"
+            "16": "/assets/images/logo.png",
+            "32": "/assets/images/logo.png",
+            "48": "/assets/images/logo.png",
+            "128": "/assets/images/logo.png"
         }
     },
     "icons": {
-        "16": "/icons/logo.png",
-        "32": "/icons/logo.png",
-        "48": "/icons/logo.png",
-        "128": "/icons/logo.png"
+        "16": "/assets/images/logo.png",
+        "32": "/assets/images/logo.png",
+        "48": "/assets/images/logo.png",
+        "128": "/assets/images/logo.png"
     }
 }

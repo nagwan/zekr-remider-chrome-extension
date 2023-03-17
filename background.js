@@ -3,7 +3,7 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.alarms.get('zekr-alarm', a => {
         if (!a) {
             chrome.alarms.create('zekr-alarm', {
-                periodInMinutes: 1
+                periodInMinutes: 10
             });
         }
     });
