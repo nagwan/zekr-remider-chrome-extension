@@ -1,0 +1,47 @@
+body{
+    width: 300px;
+    height: 350px;
+    background-color: #FFF3EE;
+    color: #093672;
+}
+.container {
+    min-height: 200px;
+    max-height: 280px;
+}
+
+.d-flex {
+
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.rounded {
+    border-radius: 100%;
+}
+
+.kufam {
+    font-family: 'Kufam', sans-serif;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
