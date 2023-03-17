@@ -7,13 +7,15 @@
         "service_worker": "./background.js"
     },
     "permissions": [
+        "notifications",
+        "alarms",
         "storage",
         "cookies"
     ],
     "author": "nagwan",
     "host_permissions": [],
     "action": {
-        "default_popup": "index.html",
+        "default_popup": "pop-up.html",
         "default_title": "Zekr Reminder",
         "default_icon": {
             "16": "/icons/logo.png",
