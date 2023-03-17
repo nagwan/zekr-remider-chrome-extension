@@ -15,7 +15,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         const zekr = azkar[Math.floor(Math.random() * azkar.length)];
         chrome.notifications.create({
             type: "basic",
-            iconUrl: "./icons/logo.png",
+            iconUrl: "./assets/images/logo.png",
             title: zekr,
             message: zekr,
             priority: 2,
