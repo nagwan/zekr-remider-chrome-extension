@@ -1,26 +1,34 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import azkar from './azkar'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {},
+  props: {},
+  data () {
+    return {}
+  },
+  computed: {
+    activeZekr () {
+      return azkar[Math.floor(Math.random() * azkar.length)]
+    }
+  },
+  methods: {}
 }
 </script>
+<template>
+    <div class="container">
+        <div>
+            <img
+                width="30"
+                height="30"
+                alt="Zekr Reminder"
+                src="/icons/logo.png"
+            />
+        </div>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+        <div>
+          <h2>{{activeZekr.name}}</h2>
+        </div>
+    </div>
+</template>
+<style scoped lang='sass'></style>

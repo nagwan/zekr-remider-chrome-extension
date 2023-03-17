@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Zekr Reminder",
+    "version": "1.0.0",
+    "description": "Zekr Reminder, is a chrome extension to remind you to recite andy random Zekr during your time on the internet",
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "permissions": [
+        "storage",
+        "cookies"
+    ],
+    "author": "nagwan",
+    "host_permissions": [],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Zekr Reminder",
+        "default_icon": {
+            "16": "/icons/logo.png",
+            "32": "/icons/logo.png",
+            "48": "/icons/logo.png",
+            "128": "/icons/logo.png"
+        }
+    },
+    "icons": {
+        "16": "/icons/logo.png",
+        "32": "/icons/logo.png",
+        "48": "/icons/logo.png",
+        "128": "/icons/logo.png"
+    }
+}
