@@ -8,8 +8,13 @@
     },
     "permissions": [
         "notifications",
-        "alarms"
+        "alarms",
+        "storage"
     ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
     "author": "nagwan",
     "host_permissions": [],
     "action": {

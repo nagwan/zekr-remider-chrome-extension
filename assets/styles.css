@@ -1,9 +1,10 @@
-body{
+.content-container {
     width: 300px;
     height: 350px;
     background-color: #FFF3EE;
     color: #093672;
 }
+
 .container {
     min-height: 200px;
     max-height: 280px;
@@ -18,11 +19,11 @@ body{
     flex-direction: column;
 }
 
-.justify-content-end{
+.justify-content-end {
     justify-content: flex-end;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
@@ -44,4 +45,22 @@ body{
 
 .text-center {
     text-align: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.btn {
+    background: none;
+    color: #093672;
+    border: 1px solid #093672;
+    outline: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
 }

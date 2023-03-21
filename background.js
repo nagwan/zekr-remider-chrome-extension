@@ -1,28 +1,52 @@
 
+const alarmName = "zekr-remider"
 chrome.runtime.onInstalled.addListener(() => {
-    chrome.alarms.get('zekr-alarm', a => {
-        if (!a) {
-            chrome.alarms.create('zekr-alarm', {
-                periodInMinutes: 10
-            });
+    sendNotification()
+    chrome.alarms.get(alarmName, alarm => {
+        if (!alarm) {
+            createAlarm()
         }
     });
 });
 
 
 chrome.alarms.onAlarm.addListener((alarm) => {
-    if (alarm.name === "zekr-alarm") {
-        const zekr = azkar[Math.floor(Math.random() * azkar.length)];
-        chrome.notifications.create({
-            type: "basic",
-            iconUrl: "./assets/images/logo.png",
-            title: zekr,
-            message: zekr,
-            priority: 2,
-        });
-    }
+    chrome.storage.sync.get((result) => {
+        let userInterval = +result.favoriteInterval || .5
+        if (alarm.name === alarmName && alarm.periodInMinutes !== userInterval) {
+            clearAlarm()
+            createAlarm()
+        } else {
+            sendNotification()
+        }
+    })
 });
 
+function createAlarm() {
+    chrome.storage.sync.get((result) => {
+        let userInterval = +result.favoriteInterval || .5
+        chrome.alarms.create(alarmName, {
+            periodInMinutes: userInterval
+        });
+    })
+}
+
+
+function clearAlarm() {
+    chrome.alarms.clear(alarmName);
+}
+
+function sendNotification() {
+    const zekr = azkar[Math.floor(Math.random() * azkar.length)];
+    chrome.notifications.create({
+        type: "basic",
+        iconUrl: "./assets/images/logo.png",
+        title: zekr,
+        message: zekr,
+        priority: 2,
+        silent: false,
+    });
+}
 
 const azkar = [
     "الْحَمْدُ لِلَّهِ",
@@ -39,6 +63,6 @@ const azkar = [
     "لا حَولَ وَلا قوّة إلاّ باللّهِ",
     " سُبْحَانَ اللهِ",
     "اللَّهُ أَكْبَرُ",
-    "لَا إِلَهَ إِلَّا اللَّهُ",
+    "اللَهُمَّ صلِّ وسَلِم وبَارِك على سيدنا محمد (ﷺ)",
 ]
 

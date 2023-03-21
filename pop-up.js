@@ -13,8 +13,17 @@ const azkar = [
     "لا حَولَ وَلا قوّة إلاّ باللّهِ",
     " سُبْحَانَ اللهِ",
     "اللَّهُ أَكْبَرُ",
-    "لَا إِلَهَ إِلَّا اللَّهُ",
+    "اللَهُمَّ صلِّ وسَلِم وبَارِك على سيدنا محمد (ﷺ)",
 ]
 
 const zekr = azkar[Math.floor(Math.random() * azkar.length)];
 document.getElementById("zekr").innerHTML = zekr;
+
+
+document.querySelector('#go-to-options').addEventListener('click', function () {
+    if (chrome.runtime.openOptionsPage) {
+        chrome.runtime.openOptionsPage();
+    } else {
+        window.open(chrome.runtime.getURL('options.html'));
+    }
+});
