@@ -12,7 +12,7 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.alarms.onAlarm.addListener((alarm) => {
     chrome.storage.sync.get((result) => {
-        let userInterval = +result.favoriteInterval || .5
+        let userInterval = +result.favoriteInterval || 30
         if (alarm.name === alarmName && alarm.periodInMinutes !== userInterval) {
             clearAlarm()
             createAlarm()
@@ -24,7 +24,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 
 function createAlarm() {
     chrome.storage.sync.get((result) => {
-        let userInterval = +result.favoriteInterval || .5
+        let userInterval = +result.favoriteInterval || 30
         chrome.alarms.create(alarmName, {
             periodInMinutes: userInterval
         });
