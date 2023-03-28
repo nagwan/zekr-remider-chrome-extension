@@ -4,7 +4,7 @@ function saveOptions() {
         favoriteInterval: +interval,
     }, function () {
         var status = document.getElementById('options-status');
-        status.textContent = 'Options saved.';
+        status.textContent = 'Options saved✅.';
         setTimeout(function () {
             status.textContent = '';
         }, 1000);

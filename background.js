@@ -1,6 +1,6 @@
 import azkar from "./azkar.js"
 
-const alarmName = "zekr-remider"
+const alarmName = "zekr-reminder"
 chrome.runtime.onInstalled.addListener(() => {
     sendNotification()
     chrome.alarms.get(alarmName, alarm => {
