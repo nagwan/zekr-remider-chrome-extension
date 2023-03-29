@@ -39,10 +39,11 @@ function clearAlarm() {
 
 function sendNotification() {
     const zekr = azkar[Math.floor(Math.random() * azkar.length)];
+    const notifications_title = "Zekr Reminder"
     chrome.notifications.create({
         type: "basic",
         iconUrl: "./assets/images/logo.png",
-        title: zekr,
+        title: notifications_title,
         message: zekr,
         priority: 2,
         silent: false,
