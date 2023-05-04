@@ -1,38 +1,39 @@
 {
     "manifest_version": 3,
-    "name": "Zekr Reminder",
-    "version": "1.1.0",
-    "description": "Zekr Reminder, is a chrome extension to remind you to recite andy random Zekr during your time on the internet",
+    "name": "وَذْكَر",
+    "version": "1.0.0",
+    "description": "وَذْكَر هي إضافة تعطر لسانك و تهذبه بذكر الله عن طريق إرسال إشعارات بالأذكار الصباحية والمسائية لتجعل لسانك دائما علي ذكر الله ",
     "background": {
-        "service_worker": "background.js",
-        "type": "module"
+    "service_worker": "background.js",
+    "type": "module"
     },
     "permissions": [
-        "notifications",
-        "alarms",
-        "storage"
+    "notifications",
+    "alarms",
+    "storage"
     ],
     "options_ui": {
-        "page": "options.html",
-        "open_in_tab": false,
-        "type": "module"
+    "page": "options.html",
+    "open_in_tab": false,
+    "type": "module"
     },
-    "author": "nagwan",
-    "host_permissions": [],
+    "author": "Nagwan",
     "action": {
-        "default_popup": "pop-up.html",
-        "default_title": "Zekr Reminder",
-        "default_icon": {
-            "16": "/assets/images/logo.png",
-            "32": "/assets/images/logo.png",
-            "48": "/assets/images/logo.png",
-            "128": "/assets/images/logo.png"
-        }
+    "default_popup": "pop-up.html",
+    "default_title": "وَذْكَر",
+    "default_icon": {
+    "16": "/assets/images/tasbih.png",
+    "32": "/assets/images/tasbih.png",
+    "48": "/assets/images/tasbih.png",
+    "128": "/assets/images/tasbih.png"
+    }
     },
     "icons": {
-        "16": "/assets/images/logo.png",
-        "32": "/assets/images/logo.png",
-        "48": "/assets/images/logo.png",
-        "128": "/assets/images/logo.png"
+    "16": "/assets/images/tasbih.png",
+    "32": "/assets/images/tasbih.png",
+    "48": "/assets/images/tasbih.png",
+    "128": "/assets/images/tasbih.png"
     }
-}
+    }
+    
+    
