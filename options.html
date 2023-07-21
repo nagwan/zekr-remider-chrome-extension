@@ -4,25 +4,54 @@
 <head>
     <title>Zekr Reminder options</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <meta charset="UTF-8">
 </head>
 
 <body>
-    <p class="kufam">Send me Zekr every:</p>
-    <select id="interval">
-        <option value="15">15 mins</option>
-        <option value="30">30 mins</option>
-        <option value="60">1 hour</option>
-        <option value="120">2 hours</option>
-        <option value="240">4 hours</option>
-        <option value="480">8 hours</option>
-        <option value="720">12 hours</option>
-        <option value="1440">24 hours</option>
-    </select>
-    <div id="options-status"></div>
-    <div class="d-flex justify-content-center m-t-10">
-        <button id="save" class="btn">Save</button>
+    <div class="p-10 options-container">
+        <div class="section-container">
+            <p class="text-bold fs-14">Zekr Interval Settings: اعدادت الفاصل الزمني بين الاذكار </p>
+            <br />
+            <div class="d-flex justify-content-between align-items-center m-t-10">
+                <p class="kufam fs-14">Send me Zekr every:</p>
+                <select id="interval" class="m-x-10">
+                    <option value="5">5 mins</option>
+                    <option value="10">10 mins</option>
+                    <option value="15">15 mins</option>
+                    <option value="20">20 mins</option>
+                    <option value="25">25 mins</option>
+                    <option value="30">30 mins</option>
+                    <option value="60">1 hour</option>
+                    <option value="120">2 hours</option>
+                    <option value="240">4 hours</option>
+                    <option value="480">8 hours</option>
+                    <option value="720">12 hours</option>
+                    <option value="1440">24 hours</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="section-container">
+            <p class="text-bold fs-14 ">Add Zekr Settings: اعدات اضافة ذِكْر </p>
+            <br />
+            <div class="d-flex justify-content-between azkar-container">
+                <input id="zekr-input" class="zekr-input" />
+                <button id="add-custom-zekr" class="btn fs-14">Add Zekr: اضافة ذِكْر</button>
+            </div>
+
+            <div id="user-azkar" class=" m-t-10"></div>
+        </div>
+
+        <p id="options-status" class="text-center hidden fs-14">Options saved 🎉</p>
+
+        <div class="d-flex justify-content-center">
+            <button id="save" class="btn">Save Changes</button>
+        </div>
+
+        <script src="options.js"></script>
     </div>
-    <script src="options.js"></script>
 </body>
 
 </html>

@@ -1,13 +1,20 @@
 .content-container {
-    width: 300px;
-    height: 350px;
-    background-color: #FFF3EE;
+    width: 350px;
+    height: 400px;
+    padding: 5px;
     color: #093672;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./images/bg.png");
+    background-size: cover;
 }
 
-.container {
-    min-height: 200px;
-    max-height: 280px;
+.options-btn {
+    position: fixed;
+    bottom: 0;
+    left: 41%;
 }
 
 .d-flex {
@@ -15,12 +22,8 @@
     display: flex;
 }
 
-.flex-column {
-    flex-direction: column;
-}
-
-.justify-content-end {
-    justify-content: flex-end;
+.justify-content-between {
+    justify-content: space-between;
 }
 
 .justify-content-center {
@@ -31,9 +34,49 @@
     align-items: center;
 }
 
-.rounded {
-    border-radius: 100%;
+.cursor-pointer {
+    cursor: pointer;
 }
+
+.btn {
+    background: none;
+    color: black;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-t-15 {
+    margin-top: 15px;
+}
+
+
+.m-x-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.text-bold {
+    font-weight: bold;
+}
+
 
 .kufam {
     font-family: 'Kufam', sans-serif;
@@ -43,24 +86,49 @@
     font-size: 30px;
 }
 
-.text-center {
-    text-align: center;
+.fs-14 {
+    font-size: 14px;
 }
 
-.cursor-pointer {
-    cursor: pointer;
+.fs-16 {
+    font-size: 16px;
 }
 
-.m-t-10 {
-    margin-top: 10px;
+.zekr-input {
+    width: 60%;
+    height: 35px;
 }
 
-.btn {
-    background: none;
-    color: #093672;
-    border: 1px solid #093672;
-    outline: none;
-    cursor: pointer;
-    padding: 6px;
+.section-container {
+    border: 1px solid #e4eaff;
     border-radius: 4px;
+    padding: 5px;
+}
+
+.rounded {
+    border-radius: 100%;
+}
+
+.hidden {
+    visibility: hidden
+}
+
+.zekr-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zekr-container:not(:last-child) {
+    border-bottom: 1px solid #e4eaff;
+}
+
+.remove-icon-container {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+select {
+    height: 35px !important;
+    border-radius: 4px !important;
 }
