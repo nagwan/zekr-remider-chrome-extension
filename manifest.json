@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Zekr Reminder",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Zekr Reminder, is a chrome extension to remind you to recite andy random Zekr during your time on the internet",
     "background": {
         "service_worker": "background.js",
