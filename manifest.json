@@ -23,16 +23,16 @@
         "default_popup": "pop-up.html",
         "default_title": "Zekr Reminder",
         "default_icon": {
-            "16": "/assets/images/logo.png",
-            "32": "/assets/images/logo.png",
-            "48": "/assets/images/logo.png",
-            "128": "/assets/images/logo.png"
+            "16": "/assets/images/logo-2.png",
+            "32": "/assets/images/logo-2.png",
+            "48": "/assets/images/logo-2.png",
+            "128": "/assets/images/logo-2.png"
         }
     },
     "icons": {
-        "16": "/assets/images/logo.png",
-        "32": "/assets/images/logo.png",
-        "48": "/assets/images/logo.png",
-        "128": "/assets/images/logo.png"
+        "16": "/assets/images/logo-2.png",
+        "32": "/assets/images/logo-2.png",
+        "48": "/assets/images/logo-2.png",
+        "128": "/assets/images/logo-2.png"
     }
 }
