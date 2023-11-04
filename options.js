@@ -1,6 +1,5 @@
 let userAzkar = []
 
-
 function saveOptions() {
     const interval = document.getElementById('interval').value;
     chrome.storage.sync.set({

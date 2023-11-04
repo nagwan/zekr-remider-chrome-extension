@@ -49,7 +49,8 @@ function clearAlarm() {
 
 function sendNotification() {
     chrome.storage.sync.get((result) => {
-        const azkarList = result.userAzkar?.length && result.userAzkar.map((el) => el.value) || azkar
+        const userCustomAzkar = result.userAzkar?.length && result.userAzkar.map((el) => el.value) || []
+        const azkarList = [...userCustomAzkar, ...azkar]
         const zekr = azkarList[Math.floor(Math.random() * azkarList.length)];
         chrome.notifications.create({
             type: "basic",
